@@ -1,4 +1,4 @@
-module Linkedin
+module LinkedIn
   class Base
     API_VERSION = 'v1'
     extend Forwardable
@@ -68,15 +68,15 @@ module Linkedin
     end
 
     def perform_get(path, options={})
-      Linkedin::Request.get(self, path, options)
+      LinkedIn::Request.get(self, path, options)
     end
     
     def perform_post(path, options={})
-      Linkedin::Request.post(self, path, options)
+      LinkedIn::Request.post(self, path, options)
     end
 
     def perform_put(path, options={})
-      Linkedin::Request.put(self, path, options)
+      LinkedIn::Request.put(self, path, options)
     end
   
   end

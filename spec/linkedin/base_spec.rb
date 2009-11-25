@@ -1,11 +1,11 @@
 require File.dirname(__FILE__) + '/../spec_helper.rb'
 
-describe Linkedin::Base, 'when doing CRUD' do  
+describe LinkedIn::Base, 'when doing CRUD' do  
   before do 
-    oauth = Linkedin::OAuth.new('token', 'secret')
+    oauth = LinkedIn::OAuth.new('token', 'secret')
     @access_token = OAuth::AccessToken.new(oauth.consumer, 'atoken', 'asecret')
     oauth.stub!(:access_token => @access_token)
-    @linkedin = Linkedin::Base.new(oauth)    
+    @linkedin = LinkedIn::Base.new(oauth)    
   end
   
   context "initialize" do

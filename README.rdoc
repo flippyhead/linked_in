@@ -1,23 +1,24 @@
+= linked_in
+
 == DESCRIPTION:
 
-The linkedin gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/). 
+The linked_in gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linked_in.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/). 
 
 == SYNOPSIS:
 	
 To authorize via oauth:
 
-	oauth = Linkedin::OAuth.new('token', 'secret') # => #<Linkedin::OAuth:0x1021db048 ...> 
+	oauth = LinkedIn::OAuth.new('token', 'secret') # => #<LinkedIn::OAuth:0x1021db048 ...> 
 	
-	oauth.request_token.authorize_url # => "https://api.linkedin.com/uas/oauth/authorize?oauth_token=XXXX" 
+	oauth.request_token.authorize_url # => "https://api.linked_in.com/uas/oauth/authorize?oauth_token=XXXX" 
 	
 Visit authorization URL, authorize and copy PIN
 	
 	oauth.authorize_from_request(oauth.request_token.token, oauth.request_token.secret, PIN)
 
-To request your profile:
+Then do stuff (like request your profile):
 
 	oauth.profile # => {'first-name' => 'Peter', 'last-name' => 'Brown' ...}
-	etc.
 
 == REQUIREMENTS:
 
@@ -29,17 +30,17 @@ A few gems are required:
 
 You'll also need a LinkedIn API account, which you can get here:
 
-* http://developer.linkedin.com/community/apis
+* http://developer.linked_in.com/community/apis
 
 == INSTALL:
 
-* gem install flippyhead-linkedin
+* gem install flippyhead-linked_in
 
 == TODO:
 
-* add support for messaging between connections (http://developer.linkedin.com/docs/DOC-1044)
-* add support for get network updates (http://developer.linkedin.com/docs/DOC-1006)
-* add support for search API (http://developer.linkedin.com/docs/DOC-1005)
+* add support for messaging between connections (http://developer.linked_in.com/docs/DOC-1044)
+* add support for get network updates (http://developer.linked_in.com/docs/DOC-1006)
+* add support for search API (http://developer.linked_in.com/docs/DOC-1005)
 
 == LICENSE:
 

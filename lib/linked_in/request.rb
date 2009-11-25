@@ -1,4 +1,4 @@
-module Linkedin
+module LinkedIn
   class Request
      extend Forwardable
     
@@ -65,7 +65,7 @@ module Linkedin
         when 404 # NotFound
           raise NotFound, "#{response.code}: #{response.message}"
         when 500 # InternalServerError
-          raise Unavailable, "Linkedin had an internal error #{response.code}: #{response.message}"
+          raise Unavailable, "LinkedIn had an internal error #{response.code}: #{response.message}"
         when 502..503 # Unavailable, BadGateway
           raise Unavailable, "#{response.code}: #{response.message}"
         end

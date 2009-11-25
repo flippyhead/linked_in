@@ -8,7 +8,7 @@ end
 
 $:.unshift(File.dirname(__FILE__) + '/../lib')
 
-require 'linkedin'
+require 'linked_in'
 require 'fakeweb'
 
 FakeWeb.allow_net_connect = false

@@ -1,6 +1,6 @@
-module Linkedin
-  # >> oauth = Linkedin::OAuth.new('token', 'secret')
-  # => #<Linkedin::OAuth:0x1021db048 ...> 
+module LinkedIn
+  # >> oauth = LinkedIn::OAuth.new('token', 'secret')
+  # => #<LinkedIn::OAuth:0x1021db048 ...> 
   # >> oauth.request_token.authorize_url 
   # => "https://api.linkedin.com/uas/oauth/authorize?oauth_token=XXXX" # goto URL
   # >> oauth.authorize_from_request(oauth.request_token.token, oauth.request_token.secret, PIN)

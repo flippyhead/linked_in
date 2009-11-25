@@ -10,18 +10,18 @@ require 'xml-object'
 
 
 
-module Linkedin
+module LinkedIn
   VERSION = '0.0.21'
   
-  class LinkedinError < StandardError; end  
-  class Unauthorized  < LinkedinError; end
-  class General       < LinkedinError; end
+  class LinkedInError < StandardError; end  
+  class Unauthorized  < LinkedInError; end
+  class General       < LinkedInError; end
   class Unavailable   < StandardError; end
   class NotFound      < StandardError; end  
   class Forbidden     < StandardError; end  
   
-  autoload :Base, File.join(File.dirname(__FILE__), *%w[linkedin base.rb])
-  autoload :OAuth, File.join(File.dirname(__FILE__), *%w[linkedin oauth.rb])
-  autoload :Request, File.join(File.dirname(__FILE__), *%w[linkedin request.rb])
+  autoload :Base, File.join(File.dirname(__FILE__), *%w[linked_in base.rb])
+  autoload :OAuth, File.join(File.dirname(__FILE__), *%w[linked_in oauth.rb])
+  autoload :Request, File.join(File.dirname(__FILE__), *%w[linked_in request.rb])
 end
 
