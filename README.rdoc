@@ -1,26 +1,35 @@
 == DESCRIPTION:
 
-The linkedin gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/).
+The linkedin gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/). 
 
 == SYNOPSIS:
 	
 To authorize via oauth:
 
 	oauth = Linkedin::OAuth.new('token', 'secret') # => #<Linkedin::OAuth:0x1021db048 ...> 
+	
 	oauth.request_token.authorize_url # => "https://api.linkedin.com/uas/oauth/authorize?oauth_token=XXXX" 
-	# after visiting authorization URL, authorizing and retrieving PIN
+	
+Visit authorization URL, authorize and copy PIN
+	
 	oauth.authorize_from_request(oauth.request_token.token, oauth.request_token.secret, PIN)
 
-Then, to request your profile:
+To request your profile:
 
 	oauth.profile # => {'first-name' => 'Peter', 'last-name' => 'Brown' ...}
 	etc.
 
 == REQUIREMENTS:
 
+A few gems are required:
+
 * forwardable
 * oauth
 * xml-object
+
+You'll also need a LinkedIn API account, which you can get here:
+
+* http://developer.linkedin.com/community/apis
 
 == INSTALL:
 

@@ -64,14 +64,14 @@ describe Linkedin::Base, 'when doing CRUD' do
       stub_get('/v1/people/~/connections', 'connections.xml')
       connections = @linkedin.connections
       connections['total'].should == '81' # attribute
-      connections['person'].size.should == 81 # array of people      
-      connections['person'][0]['first-name'].should == 'Jeff'
+      connections['person'].size.should == 2 # array of people      
+      connections['person'][0]['first-name'].should == 'John'
     end    
     
     it "should get connections with query params" do
       stub_get('/v1/people/~/connections?count=20&start=0', 'connections.xml')
       connections = @linkedin.connections(nil, nil, :start => 0, :count => 20)
-      connections['person'][0]['first-name'].should == 'Jeff'
+      connections['person'][0]['first-name'].should == 'John'
     end
     
     it "should get connections with field selectors" do
@@ -86,7 +86,7 @@ describe Linkedin::Base, 'when doing CRUD' do
       stub_get('/v1/people', 'people.xml')
       people = @linkedin.people
       people['total'].should == '46441' # attribute
-      people['person'].size.should == 10
+      people['person'].size.should == 2
     end
   end
   
@@ -106,7 +106,7 @@ describe Linkedin::Base, 'when doing CRUD' do
     it "should include first ten update details" do
       stub_get('/v1/people/~/network', 'network.xml')
       network = @linkedin.network
-      network['updates']['update'].size.should == 10
+      network['updates']['update'].size.should == 2
     end    
     
     it "should get with query params" do
