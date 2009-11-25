@@ -1,0 +1,62 @@
+= linkedin
+
+* http://github.com/flippyhead/linkedin
+
+== DESCRIPTION:
+
+The linkedin gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/).
+
+== SYNOPSIS:
+	
+To authorize via oauth:
+
+	oauth = Linkedin::OAuth.new('token', 'secret') # => #<Linkedin::OAuth:0x1021db048 ...> 
+	oauth.request_token.authorize_url # => "https://api.linkedin.com/uas/oauth/authorize?oauth_token=XXXX" 
+	# after visiting authorization URL, authorizing and retrieving PIN
+	oauth.authorize_from_request(oauth.request_token.token, oauth.request_token.secret, PIN)
+
+Then, to request your profile:
+
+	oauth.profile # => {'first-name' => 'Peter', 'last-name' => 'Brown' ...}
+	etc.
+
+== REQUIREMENTS:
+
+* forwardable
+* oauth
+* xml-object
+
+== INSTALL:
+
+* gem install flippyhead-linkedin
+
+== TODO:
+
+* add support for messaging between connections (http://developer.linkedin.com/docs/DOC-1044)
+* add support for get network updates (http://developer.linkedin.com/docs/DOC-1006)
+* add support for search API (http://developer.linkedin.com/docs/DOC-1005)
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2009 FIXME full name
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

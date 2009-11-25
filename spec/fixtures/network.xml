@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<network>
+  <network-stats total="2">
+    <property key="degree-1-count">81</property>
+    <property key="degree-2-count">34521</property>
+  </network-stats>
+  <updates total="126" start="0" count="10">
+    <update>
+      <timestamp>1257289874000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>2952564</id>
+          <first-name>Barry</first-name>
+          <last-name>Hurd</last-name>
+          <headline>Program Director at Social Media Club Seattle</headline>
+          <connections total="1">
+            <person>
+              <id>12234575</id>
+              <first-name>Eben</first-name>
+              <last-name>Greene</last-name>
+              <headline>President / Creative Director at Eben Design</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/pBbD9_nVVH:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:IWMR</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=12234575&amp;authToken=IWMR&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/SEFWs3XMCt:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:A0Kc</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=2952564&amp;authToken=A0Kc&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257289528000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>54033</id>
+          <first-name>Otis</first-name>
+          <last-name>Collier</last-name>
+          <headline>The Personal Branding Coach who can make you a recognized expert in your industry.</headline>
+          <connections total="1">
+            <person>
+              <id>5229494</id>
+              <first-name>Rashida</first-name>
+              <last-name>Mendes</last-name>
+              <headline>Business Development</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/isQ0ByYT0z:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:jBzG</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=5229494&amp;authToken=jBzG&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/VSWJh20wiJ:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:iZgD</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=54033&amp;authToken=iZgD&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257288567000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>1941456</id>
+          <first-name>T. A.</first-name>
+          <last-name>McCann</last-name>
+          <headline>Advisor at ZOOPPA.COM SRL</headline>
+          <connections total="1">
+            <person>
+              <id>13976854</id>
+              <first-name>Luca</first-name>
+              <last-name>Candela</last-name>
+              <headline>Project Manager and User Experience Expert</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/gOMfc5lEAl:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:fdq7</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=13976854&amp;authToken=fdq7&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/Tg6OMzRLli:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:EtMT</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=1941456&amp;authToken=EtMT&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257288565000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>1941456</id>
+          <first-name>T. A.</first-name>
+          <last-name>McCann</last-name>
+          <headline>Advisor at ZOOPPA.COM SRL</headline>
+          <connections total="1">
+            <person>
+              <id>154451</id>
+              <first-name>Chris</first-name>
+              <last-name>Early</last-name>
+              <headline>Entrepreneur &amp; Game Executive</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/HY9etIZb2_:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:GwG9</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=154451&amp;authToken=GwG9&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/Tg6OMzRLli:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:EtMT</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=1941456&amp;authToken=EtMT&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257288551000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>1941456</id>
+          <first-name>T. A.</first-name>
+          <last-name>McCann</last-name>
+          <headline>Advisor at ZOOPPA.COM SRL</headline>
+          <connections total="1">
+            <person>
+              <id>8316128</id>
+              <first-name>Gina</first-name>
+              <last-name>Wu</last-name>
+              <headline>Director of Business Development, Dharne.com, a web solutions provider</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/FIEE8tRmU1:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:8OIM</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=8316128&amp;authToken=8OIM&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/Tg6OMzRLli:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:EtMT</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=1941456&amp;authToken=EtMT&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257286581000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>254111</id>
+          <first-name>Josh</first-name>
+          <last-name>Slimmer</last-name>
+          <headline>Principal, Jericho HR Group - www.jerichohr.com  &quot; We Bring Down the Walls Between Great Companies and Great Candidates&quot;</headline>
+          <connections total="1">
+            <person>
+              <id>26896616</id>
+              <first-name>Matt</first-name>
+              <last-name>Lesperance</last-name>
+              <headline>Scientific Recruiter at Aerotek Scientific</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/K_xmIguALj:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:CP4E</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=26896616&amp;authToken=CP4E&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/Po82UIkyVW:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:RgrK</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=254111&amp;authToken=RgrK&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257281921206</timestamp>
+      <update-key>STAT-54033-27</update-key>
+      <update-type>STAT</update-type>
+      <update-content>
+        <person>
+          <id>54033</id>
+          <first-name>Otis</first-name>
+          <last-name>Collier</last-name>
+          <headline>The Personal Branding Coach who can make you a recognized expert in your industry.</headline>
+          <current-status>is preparing for his consulting gig in Washington, DC next week.</current-status>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/VSWJh20wiJ:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:iZgD</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=54033&amp;authToken=iZgD&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>true</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257279938565</timestamp>
+      <update-type>JGRP</update-type>
+      <update-content>
+        <person>
+          <id>346553</id>
+          <first-name>Shannon</first-name>
+          <last-name>Barbour</last-name>
+          <headline>Recruiting Manager shannon.barbour@razorfish.com</headline>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/C96yohygxw:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:Dik3</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=346553&amp;authToken=Dik3&amp;authType=name</url>
+          </site-standard-profile-request>
+          <member-groups total="1">
+            <member-group>
+              <id>91938</id>
+              <name>Microsoft Alumni (&amp; Employees)</name>
+              <site-group-request>
+                <url>http://www.linkedin.com/groups?gid=91938</url>
+              </site-group-request>
+            </member-group>
+          </member-groups>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257279575952</timestamp>
+      <update-type>JGRP</update-type>
+      <update-content>
+        <person>
+          <id>346553</id>
+          <first-name>Shannon</first-name>
+          <last-name>Barbour</last-name>
+          <headline>Recruiting Manager shannon.barbour@razorfish.com</headline>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/C96yohygxw:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:Dik3</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=346553&amp;authToken=Dik3&amp;authType=name</url>
+          </site-standard-profile-request>
+          <member-groups total="1">
+            <member-group>
+              <id>2100350</id>
+              <name>Razorfish Alumni Network</name>
+              <site-group-request>
+                <url>http://www.linkedin.com/groups?gid=2100350</url>
+              </site-group-request>
+            </member-group>
+          </member-groups>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+    <update>
+      <timestamp>1257274572000</timestamp>
+      <update-type>CONN</update-type>
+      <update-content>
+        <person>
+          <id>54033</id>
+          <first-name>Otis</first-name>
+          <last-name>Collier</last-name>
+          <headline>The Personal Branding Coach who can make you a recognized expert in your industry.</headline>
+          <connections total="1">
+            <person>
+              <id>29017994</id>
+              <first-name>Suzette (Davis)</first-name>
+              <last-name>Phillips</last-name>
+              <headline>Independent Marketing Consultant</headline>
+              <api-standard-profile-request>
+                <url>http://api.linkedin.com/v1/people/k-9JI8PiZc:full</url>
+                <headers total="1">
+                  <http-header>
+                    <name>x-li-auth-token</name>
+                    <value>name:Z9sF</value>
+                  </http-header>
+                </headers>
+              </api-standard-profile-request>
+              <site-standard-profile-request>
+                <url>http://www.linkedin.com/profile?viewProfile=&amp;key=29017994&amp;authToken=Z9sF&amp;authType=name</url>
+              </site-standard-profile-request>
+            </person>
+          </connections>
+          <api-standard-profile-request>
+            <url>http://api.linkedin.com/v1/people/VSWJh20wiJ:full</url>
+            <headers total="1">
+              <http-header>
+                <name>x-li-auth-token</name>
+                <value>name:iZgD</value>
+              </http-header>
+            </headers>
+          </api-standard-profile-request>
+          <site-standard-profile-request>
+            <url>http://www.linkedin.com/profile?viewProfile=&amp;key=54033&amp;authToken=iZgD&amp;authType=name</url>
+          </site-standard-profile-request>
+        </person>
+      </update-content>
+      <is-commentable>false</is-commentable>
+    </update>
+  </updates>
+</network>

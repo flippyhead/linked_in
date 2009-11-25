@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<error>
+  <status>400</status>
+  <timestamp>1256621178299</timestamp>
+  <error-code>0000</error-code>
+  <message>Did not understand query</message>
+</error>
