@@ -1,7 +1,3 @@
-= linkedin
-
-* http://github.com/flippyhead/linkedin
-
 == DESCRIPTION:
 
 The linkedin gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/).
