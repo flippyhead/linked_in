@@ -2,11 +2,11 @@
 
 == DESCRIPTION:
 
-The linked_in gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linked_in.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/). 
+The linked_in gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/). 
 
-== SYNOPSIS:
+== EXAMPLES:
 	
-To authorize via oauth:
+First, authorize via oauth:
 
 	oauth = LinkedIn::OAuth.new('token', 'secret') # => #<LinkedIn::OAuth:0x1021db048 ...> 
 	
@@ -16,9 +16,45 @@ Visit authorization URL, authorize and copy PIN
 	
 	oauth.authorize_from_request(oauth.request_token.token, oauth.request_token.secret, PIN)
 
-Then do stuff (like request your profile):
+Finally, do stuff!
 
-	oauth.profile # => {'first-name' => 'Peter', 'last-name' => 'Brown' ...}
+	linked_in = LinkedIn::Base.new(oauth)
+
+=== Profile Information
+
+	# currently auth'd users basic profile
+	linked_in.profile
+	
+	# currently auth'd users full profile
+	linked_in.profile(:my, :full)
+	
+	# current auth'd users profile, with field selectors
+	linked_in.profile(:my, ['first-name', 'last-name'])
+
+	# get a profile by public URL
+	linked_in.profile(:url => 'http://www.linkedin.com/pub/peter-brown/0/116/112')
+	
+	# get a profile by ID
+	linked_in.profile(:id => '12345')
+	
+	# get full profile by ID
+	linked_in.profile({:id => '12123'}, :full)
+
+	# get profile by ID with field selectors
+	linked_in.profile({:id => '12123'}, ('first-name', 'last-name'))
+
+=== Connection Information
+
+	# currently auth'd users connections
+	linked_in.connections
+
+=== Network Updates
+
+		# currently auth'd users network updates
+		linked_in.network
+		
+		# limit updates 
+		linked_in.network(:start => 0, :count => 20)
 
 == REQUIREMENTS:
 

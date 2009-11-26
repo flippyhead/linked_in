@@ -13,7 +13,7 @@ module LinkedIn
     
     # Lookup Options: url=<public profile URL>, id=<member id>
     # Field Options: :full
-    def profile(fields = nil, lookup = nil, query = {})
+    def profile(lookup = nil, fields = nil, query = {})
       path = profile_path(nil, lookup, fields)
       perform_get(path, :query => query)
     end    
@@ -25,7 +25,7 @@ module LinkedIn
     end
     
     # Query options: start=N, count=N
-    def connections(fields = nil, lookup = nil, query = {})
+    def connections(lookup = nil, fields = nil, query = {})
       path = profile_path('connections', lookup, fields)
       perform_get(path, :query => query)
     end
@@ -59,11 +59,12 @@ module LinkedIn
       "/#{API_VERSION}/#{p}"
     end
     
+    # Generate LinkedIn API compatable paths
     def profile_path(api = nil, lookup = nil, fields = nil)
       path =  api_path('people') + '/'
-      path += lookup.kind_of?(Hash) ? "#{lookup.first[0]}=#{lookup.first[1]}" : (lookup || '~')
+      path += lookup.kind_of?(Hash) ? "#{lookup.first[0]}=#{lookup.first[1]}" : ([nil, :my].include?(lookup) ? '~' : lookup.to_s)
       path += api.nil? ? '' : "/#{api}"
-      path += fields.kind_of?(Array) ? ":(#{fields.collect{|f| f.to_s}.join(',')})" : ""
+      path += fields.kind_of?(Array) ? ":(#{fields.collect{|f| f.to_s}.join(',')})" : (fields.nil? ? '' : ":#{fields.to_s}")
       path
     end
 

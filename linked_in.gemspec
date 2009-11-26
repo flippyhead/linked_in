@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = %q{2009-11-25}
   s.summary = %q{The linked_in gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linked_in.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/).}
   s.email = ["peter@pathable.com"]
-  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt"]
+  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
   s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "docs/sample-oauth-plugin_token.rb", "lib/linked_in.rb", "lib/linked_in/base.rb", "lib/linked_in/oauth.rb", "lib/linked_in/request.rb", "linked_in.gemspec", "script/console", "script/destroy", "script/generate", "spec/fixtures/connections.xml", "spec/fixtures/connections_with_field_selectors.xml", "spec/fixtures/empty.xml", "spec/fixtures/error.xml", "spec/fixtures/network.xml", "spec/fixtures/people.xml", "spec/fixtures/profile.xml", "spec/linked_in/base_spec.rb", "spec/linked_in/oauth_spec.rb", "spec/linked_in/request_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/rspec.rake"]
   s.post_install_message = %q{PostInstall.txt}
   s.rdoc_options = ["--main", "README.rdoc"]

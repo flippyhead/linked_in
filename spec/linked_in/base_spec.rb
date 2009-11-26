@@ -36,9 +36,14 @@ describe LinkedIn::Base, 'when doing CRUD' do
 
     it "should get full profile " do
       stub_get('/v1/people/~:full', 'profile.xml')
-      profile = @linkedin.profile(:full)
-      profile['first-name'].should == 'Peter'
-      # need more checks for FULL profile, whatever that means
+      profile = @linkedin.profile(:my, :full)
+      profile['first-name'].should == 'Peter'      
+    end
+
+    it "should get profile with field selectors" do
+      stub_get('/v1/people/~:(first-name,last-name)', 'profile.xml')
+      profile = @linkedin.profile(:my, ['first-name', 'last-name'])
+      profile['first-name'].should == 'Peter'      
     end
     
     it "should default to ~ (authenticated users profile)" do
@@ -52,11 +57,24 @@ describe LinkedIn::Base, 'when doing CRUD' do
       profile['first-name'].should == 'Peter'
     end    
     
-    it "should get public profile from ID" do
+    it "should get profile from ID" do
       stub_get('/v1/people/id=12345', 'profile.xml')
       profile = @linkedin.profile(:id => '12345')
       profile['first-name'].should == 'Peter'
     end        
+    
+    it "should get full public profile from ID" do
+      stub_get('/v1/people/id=12345:full', 'profile.xml')
+      profile = @linkedin.profile({:id => '12345'}, :full)
+      profile['first-name'].should == 'Peter'
+    end        
+
+    it "should get profile from ID with field selectors" do
+      stub_get('/v1/people/id=12345:(first-name,last-name)', 'profile.xml')
+      profile = @linkedin.profile({:id => '12345'}, ['first-name', 'last-name'])
+      profile['first-name'].should == 'Peter'
+    end        
+    
   end  
   
   context "getting connections" do
@@ -70,13 +88,13 @@ describe LinkedIn::Base, 'when doing CRUD' do
     
     it "should get connections with query params" do
       stub_get('/v1/people/~/connections?count=20&start=0', 'connections.xml')
-      connections = @linkedin.connections(nil, nil, :start => 0, :count => 20)
+      connections = @linkedin.connections(:my, nil, :start => 0, :count => 20)
       connections['person'][0]['first-name'].should == 'John'
     end
     
     it "should get connections with field selectors" do
       stub_get('/v1/people/~/connections:(id,first-name)', 'connections_with_field_selectors.xml')
-      connections = @linkedin.connections(['id', 'first-name'])
+      connections = @linkedin.connections(:my, ['id', 'first-name'])
       connections['person'][0]['first-name'].should == 'Jeff'
     end    
   end
