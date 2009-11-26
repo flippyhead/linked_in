@@ -1,5 +1,3 @@
-= linked_in
-
 == DESCRIPTION:
 
 The linked_in gem wraps the LinkedIn API making it easy to read and write profile information and messages on http://linkedin.com. Full support for OAuth is provided including a wrapper for Pelle's oauth-plugin (http://github.com/pelle/oauth-plugin/). This gem borrowed heavily from junemakers twitter gem (http://github.com/jnunemaker/twitter/). 
@@ -50,11 +48,11 @@ Finally, do stuff!
 
 === Network Updates
 
-		# currently auth'd users network updates
-		linked_in.network
+	# currently auth'd users network updates
+	linked_in.network
 		
-		# limit updates 
-		linked_in.network(:start => 0, :count => 20)
+	# limit updates 
+	linked_in.network(:start => 0, :count => 20)
 
 == REQUIREMENTS:
 
@@ -70,7 +68,9 @@ You'll also need a LinkedIn API account, which you can get here:
 
 == INSTALL:
 
-* gem install flippyhead-linked_in
+	sudo gem install gemcutter
+	gem tumble
+	sudo gem install linked_in
 
 == TODO:
 
